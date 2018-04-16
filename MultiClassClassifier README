@@ -1,0 +1,49 @@
+
+Hi Everyone !
+I am so happy to share this project with you guys
+that is Multiclass-Classification using TFIDF-Vectorizer amd
+Multinomial Naive Bayes Classifier
+
+1st Block:
+Importing the all important libraries from sklearn and nltk
+
+#############
+Let's analyse the input file sentiment analysis :
+It contains many columns but we will stick to the comment 
+column to find the sentiment of our sentence.
+
+comment --contains text as well as punctuations.
+So it's better to remove the punctuations by including them in the stopwords
+and our o/p variable is a categoriacl variable we will split that also
+
+######################
+Let us break the categorial o/p variables and assign some value to it.
+Here we are using the Regexptokenizer that will split acc to the words and 
+it will take the words taht are greater than len 2 and will not take the
+stopwords and we have named it as tokenizefunc
+
+########################3
+
+Next we have splitted our data into train and test sets, we can change the type to int if our o/ps 
+are in str format.
+
+############################
+
+here I have used TfidfVectorizer fn so that it should not give weightage to 
+the words repeating again and again.
+PARAMETERS--->stop words and add tokenising fn.
+First we intialised tfidf vectorizer with ceratin parmeters and now we will fit_transform the training data 
+and transform the  test data.
+After fitting the vectorizer ------------>
+###############################
+
+Now we will now initialise our MultiNomial Naive Bayes Classifier
+We will fit it
+We will predict
+and calculate the accuracy ========
+
+###############################
+Same thing you can do with ANN
+
+#################################3
+ENJOY LEARNING !
